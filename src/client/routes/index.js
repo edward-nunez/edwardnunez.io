@@ -5,7 +5,7 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 import Home from '../components/Home';
 import NoMatch from '../components/NoMatch';
-import Projects from '../components/Projects';
+import Work from '../components/Work';
 import { Blog, BlogPost } from '../components/Blog';
 import About from '../components/About';
 import Contact from '../components/Contact';
@@ -31,7 +31,7 @@ class Routes extends Component {
                   classNames="fade"
                 >
                   <Switch location={location}>
-                    <Route path="/projects" component={Projects} />
+                    <Route path="/work" component={Work} />
                     <Route path="/blog/:id" component={BlogPost} />
                     <Route path="/blog" component={Blog} />
                     <Route path="/about" component={About} />
